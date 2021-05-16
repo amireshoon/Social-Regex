@@ -30,5 +30,23 @@
                 "want" : false
             }
         ]
+    },
+    {
+        "title" : "Instagram reel regex",
+        "regex" : "^(https?:\\/\\/www\\.)?instagram\\.com(\\/(reel|REEL)\\/\\w+\\/?)$",
+        "tests" : [
+            {
+                "case" : "https://www.instagram.com/tv/B4u8cDHgT1K/",
+                "want" : false
+            },
+            {
+                "case" : "https://www.instagram.com/reel/B4u8cDHgT1K",
+                "want" : true
+            },
+            {
+                "case" : "https://www.instagram.com/REEL/aD23Fslfk24",
+                "want" : false
+            }
+        ]
     }
 ]
