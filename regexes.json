@@ -1,0 +1,16 @@
+[
+    {
+        "title" : "Instagram post regex",
+        "regex" : "",
+        "tests" : [
+            {
+                "case" : "",
+                "want" : true
+            },
+            {
+                "case" : "",
+                "want" : false
+            }
+        ]
+    }
+]
