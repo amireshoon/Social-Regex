@@ -1,15 +1,15 @@
 [
     {
         "title" : "Instagram post regex",
-        "regex" : "",
+        "regex" : "^(https?:\\/\\/www\\.)?instagram\\.com(\\/(p|tv|REEL|reel)\\/\\w+\\/?)$",
         "tests" : [
             {
-                "case" : "",
+                "case" : "https://www.instagram.com/tv/B4u8cDHgT1K/",
                 "want" : true
             },
             {
-                "case" : "",
-                "want" : false
+                "case" : "https://google.com",
+                "want" : true
             }
         ]
     }
