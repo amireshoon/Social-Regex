@@ -1,15 +1,33 @@
 [
     {
         "title" : "Instagram post regex",
-        "regex" : "^(https?:\\/\\/www\\.)?instagram\\.com(\\/(p|tv|REEL|reel)\\/\\w+\\/?)$",
+        "regex" : "^(https?:\\/\\/www\\.)?instagram\\.com(\\/(p)\\/\\w+\\/?)$",
+        "tests" : [
+            {
+                "case" : "https://www.instagram.com/p/B4u8cDHgT1K/",
+                "want" : true
+            },
+            {
+                "case" : "https://google.com",
+                "want" : true
+            }
+        ]
+    },
+    {
+        "title" : "Instagram igtv regex",
+        "regex" : "^(https?:\\/\\/www\\.)?instagram\\.com(\\/(tv)\\/\\w+\\/?)$",
         "tests" : [
             {
                 "case" : "https://www.instagram.com/tv/B4u8cDHgT1K/",
                 "want" : true
             },
             {
-                "case" : "https://google.com",
+                "case" : "https://www.instagram.com/tv/B4u8cDHgT1K",
                 "want" : true
+            },
+            {
+                "case" : "https://www.instagram.com/p/aD23Fslfk24",
+                "want" : false
             }
         ]
     }
